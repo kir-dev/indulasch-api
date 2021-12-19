@@ -1,0 +1,35 @@
+{
+  "name": "indulasch-api",
+  "packageManager": "yarn@3.0.1",
+  "version": "2.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Bálint Berente",
+    "email": "balint.berente@gmail.com"
+  },
+  "scripts": {
+    "start-prod": "node ./dist/index.js",
+    "start": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "html-entities": "^2.3.2",
+    "json-loader": "^0.5.7",
+    "prettier": "^2.5.1",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "ts-transformer-keys": "^0.4.3",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon-webpack-plugin": "^4.7.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
