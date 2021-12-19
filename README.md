@@ -1,4 +1,5 @@
 # InduláSch API
+![Version](https://img.shields.io/github/package-json/v/kir-dev/indulasch-api?style=flat-square) ![Issues](https://img.shields.io/github/issues/kir-dev/indulasch-api?style=flat-square)  
 Departures and alerts querying backend for applications of the project induláSch. Uses the official BKK Futár API to get the most accurate departure times and information.
 
 ## Endpoints
