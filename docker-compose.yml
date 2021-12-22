@@ -1,12 +1,9 @@
+version: "3.3"
 services:
   indulasch-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: base
-    container_name: indulasch-api
-    expose:
-      - '3333'
-    ports:
-      - '3333:3001'
+    build: .
     command: node dist/index.js
+  indulasch-frontend:
+    build: ../indulasch-frontend
+    ports:
+      - '3333:80'
