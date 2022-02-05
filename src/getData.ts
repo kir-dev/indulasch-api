@@ -13,7 +13,7 @@ export function getData(lat: string, lon: string, radius: string) {
   return new Promise<FutarAPI>((resolve, reject) => {
     https.get(
       getUrl(lat, lon, radius),
-      { headers: { "Content-Type": "application/json; charset='utf-8'" } },
+      { headers: { "Content-Type": "application/json" } },
       (res) => {
         let str = "";
         res.on("data", (chunk) => {
