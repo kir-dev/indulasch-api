@@ -1,11 +1,13 @@
 import express, { NextFunction } from "express";
 import cors from "cors";
 import { Router } from "./router";
+import { Messenger } from "./types/messenger";
 
 require("dotenv").config();
 const port = process.env.PORT || 3001;
 
 const app = express();
+app.set("messenger", new Messenger());
 app.use(cors());
 app.use(express.json());
 Router(app);
