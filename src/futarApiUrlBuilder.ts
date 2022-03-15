@@ -17,7 +17,7 @@ export function getUrl(lat: string, lon: string, radius: string) {
   api_url.searchParams.append("clientLat", lat);
   api_url.searchParams.append("minutesBefore", "0");
   api_url.searchParams.append("limit", "30");
-  api_url.searchParams.append("groupLimit", "2");
+  api_url.searchParams.append("groupLimit", "1");
   api_url.searchParams.append("onlyDepartures", "true");
   api_url.searchParams.append("radius", radius);
   return api_url;
