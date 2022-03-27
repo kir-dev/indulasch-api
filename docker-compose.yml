@@ -4,7 +4,3 @@ services:
     build: .
     command: node dist/index.js
     restart: always
-  indulasch-frontend:
-    build: ../indulasch-frontend
-    ports:
-      - '3333:80'
